@@ -1,0 +1,7 @@
+DELETE http://localhost:5000/api/ratingSkill
+Content-Type: application/json
+
+{
+    "wilderId": 2,
+    "skillId": 15
+}

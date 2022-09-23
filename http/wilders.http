@@ -1,0 +1,60 @@
+POST http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "name": "Prophessy",
+    "description": "Je fais du crossfit"
+}
+
+###
+
+GET http://localhost:5000/api/wilder
+
+###
+
+GET http://localhost:5000/api/wilder/2
+
+###
+
+PUT http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Willy Wonka",
+    "description": "J'ai une chocolaterie dans laquelle je mange des enfants"
+}
+
+###
+
+DELETE http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+###
+
+GET http://localhost:5000/nexistepas
+
+###
+
+PUT http://localhost:5000/api/wilder/addSkill
+Content-Type: application/json
+
+{
+    "wilderId": 1,
+    "skillName": "COBOL"
+}
+
+###
+
+PUT http://localhost:5000/api/wilder/addRateToSkill
+Content-Type: application/json
+
+{
+    "name": "Marie Lorraine",
+    "skillName": "C#",
+    "rate": 8
+}
